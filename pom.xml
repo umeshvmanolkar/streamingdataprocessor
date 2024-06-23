@@ -9,10 +9,16 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.streaming.data.processor</groupId>
+
 	<artifactId>streamingdataprocessor</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>streamingdataprocessor</name>
 	<description>streamingdataprocessor consumes and process the data coming from wikimedia stream.</description>
+	<modules>
+		<module>kafkaProducer</module>
+        <module>KafkaConsumer</module>
+    </modules>
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -42,7 +48,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
